@@ -3,6 +3,7 @@
 
 using namespace cv;
 
+// 最近邻插值
 void Resize(Mat input_file, Mat output_file, double dx, double dy)
 {
 	for (int i = 0; i < output_file.cols; i++)
@@ -60,3 +61,5 @@ void Besize(Mat input_file, Mat& output_file, double dx, double dy)
 		}// for (j = 0; j < ih; j++)
 	}// for (i = 0; i < iw; i++)
 }
+
+// 三线性插值
